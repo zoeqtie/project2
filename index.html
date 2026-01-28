@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Security Story</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero fade">
+  <h1>รหัสผ่านง่าย = ชีวิตออนไลน์พัง</h1>
+  <p>เลื่อนลงเพื่อดูเรื่องราว</p>
+</section>
+
+<section class="video-section fade">
+  <video class="video-small" autoplay muted loop playsinline>
+  <source src="ex1.mp4" type="video/mp4">
+</video>
+</section>
+<section class="test-section fade">
+  <h2>ทดสอบรหัสผ่านของคุณ</h2>
+  <input type="text" id="password" placeholder="กรอกรหัสผ่าน">
+  <button onclick="checkPassword()">ตรวจสอบ</button>
+  <p id="result"></p>
+  <button class="info-btn" onclick="openInfo()">ดูความรู้เกี่ยวกับรหัสผ่าน</button>
+</section>
+<script src="script.js"></script>
+<!-- Popup Intro -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h2>⚠️ คำเตือนด้านความปลอดภัย</h2>
+    <p>
+      รหัสผ่านที่คุณใช้ทุกวัน อาจถูกแฮกได้ในไม่กี่วินาที<br>
+      เรียนรู้วิธีป้องกันตัวเอง ก่อนจะสายเกินไป
+    </p>
+    <button onclick="closePopup()">เริ่มเรียนรู้</button>
+  </div>
+</div>
+<!-- Popup Warning Password -->
+<div id="warnPopup" class="popup" style="display:none;">
+  <div class="popup-content">
+    <h2>❌ รหัสผ่านไม่ปลอดภัย</h2>
+    <p id="warnText"></p>
+    <button onclick="closeWarn()">แก้ไขรหัสผ่าน</button>
+  </div>
+</div>
+<!-- Popup Correct Password -->
+<div id="correctPopup" class="popup" style="display:none;">
+  <div class="popup-content correct">
+    <h2>✅ รหัสผ่านปลอดภัย</h2>
+    <p>รหัสผ่านของคุณมีความปลอดภัย สามารถใช้งานได้</p>
+    <button onclick="closeCorrect()">ปิด</button>
+  </div>
+</div>
+<div id="infoPopup" class="popup" style="display:none;">
+  <div class="popup-content">
+    <h2>ความรู้เกี่ยวกับรหัสผ่านที่ปลอดภัย</h2>
+
+    <p><b>🔐 รหัสผ่านที่ดีควรมี</b><br>
+    ตัวพิมพ์ใหญ่ ตัวพิมพ์เล็ก ตัวเลข สัญลักษณ์ และยาวมากกว่า 8 ตัวอักษร</p>
+
+    <p><b>⚠️ หลีกเลี่ยงรหัสผ่านแบบนี้</b><br>
+    123456, password, วันเกิด, เบอร์โทร</p>
+
+    <p><b>🛡 ป้องกันเพิ่ม</b><br>
+    เปิด Two-Factor Authentication และเปลี่ยนรหัสผ่านสม่ำเสมอ</p>
+
+    <button onclick="closeInfo()">ปิด</button>
+  </div>
+</div>
+
+</body>
+</html>
