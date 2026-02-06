@@ -44,9 +44,8 @@ input{
 
 /* เอฟเฟกต์เลื่อนแล้วโผล่ */
 .fade{
-  opacity:0;
-  transform:translateY(40px);
-  transition: all 1s ease;
+  opacity: 1;
+  transform: none;
 }
 
 .fade.show{
@@ -118,3 +117,4 @@ input{
   font-weight:bold;
   cursor:pointer;
 }
+
