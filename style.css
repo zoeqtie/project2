@@ -93,18 +93,12 @@ input{
   border-radius:0px;
   box-shadow:0 0 40px #000000;
 }
-
 .video-section{
-  margin-top:-150px;   /* ดันวิดีโอขึ้น */
+  margin-top:40px;
 }
-.video-section h2{
-  margin-bottom:100px;
-}
-.video-small{
-  margin-top:-10px;   /* ขยับตัววิดีโอขึ้นอีกนิด */
-}
+
 .test-section{
-  margin-top:-120px;   /* ดันขึ้น */
+  margin-top:60px;
 }
 
 .test-section h2{
@@ -120,5 +114,6 @@ input{
   font-weight:bold;
   cursor:pointer;
 }
+
 
 
