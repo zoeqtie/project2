@@ -15,9 +15,12 @@ h1,h2{
 }
 
 video{
-  width:1000%;
-  border-radius:0px;
+  width:100%;
+  max-width:900px;
+  display:block;
+  margin:0 auto;
 }
+
 
 img{
   width:60%;
@@ -117,4 +120,5 @@ input{
   font-weight:bold;
   cursor:pointer;
 }
+
 
