@@ -15,11 +15,13 @@ h1,h2{
 }
 
 video{
-  width:100%;
-  max-width:900px;
+  width:90%;
+  max-width:800px;
   display:block;
-  margin:0 auto;
+  margin:30px auto;
+  border-radius:10px;
 }
+
 
 
 img{
@@ -114,6 +116,14 @@ input{
   font-weight:bold;
   cursor:pointer;
 }
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
 
 
 
